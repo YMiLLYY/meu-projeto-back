@@ -10,7 +10,8 @@ const sequelize = new Sequelize(process.env.SUPABASE_URL, {
     ssl: {
       require: true,
       rejectUnauthorized: false // Importante para evitar erros de certificado
-    }
+    },
+    family: 4
   }
 });
 
